@@ -1,0 +1,31 @@
+<html>
+<head>
+<script type="text/javascript">   
+function password() {   
+var testV = 1;   
+var pass1 = prompt('请输入密码:','');   
+while (testV < 3) {   
+if (!pass1)    
+history.go(-1);   
+if (pass1 == "9821") {
+alert('密码正确');   
+window.location.href="a.html";
+break;   
+}    
+testV+=1;   
+var pass1 =    
+prompt('密码错误','');   
+}   
+if (pass1!="password" & testV ==3)    
+history.go(-1);   
+return " ";   
+}    
+document.write(password());   
+</script>
+<title>put password</title>
+</head>
+<body>
+<center>
+<font size="500" color="red">Plase in put a password</font>
+</center>
+</html>
